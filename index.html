@@ -56,60 +56,7 @@
 }
  </style>
   <script>
-         
-    //Especificar a que elementos afectará, añadiendo o quitando de la lista:
-    var tgs = new Array( 'div','td','tr');
-    
-    //Indicar el nombre de los diferentes tamaños de fuente:
-    var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
-    var startSz = 2;
-    
-    function ts( trgt,inc ) {
-    if (!document.getElementById) return
-    var d = document,cEl = null,sz = startSz,i,j,cTags;
-    
-    sz += inc;
-    if ( sz < 0 ) sz = 0;
-    if ( sz > 6 ) sz = 6;
-    startSz = sz;
-    
-    if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
-    
-    cEl.style.fontSize = szs[ sz ];
-    
-    for ( i = 0 ; i < tgs.length ; i++ ) {
-    cTags = cEl.getElementsByTagName( tgs[ i ] );
-    for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
-    }
-    }
-
-function myFunction() {
-  var x = document.getElementById("Demo");
-  if (x.className.indexOf("w3-show") == -1) {
-  x.className += " w3-show";
-  } else { 
-  x.className = x.className.replace(" w3-show", "");
-  }
-}
-function myFunction2() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction2() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
+  
 
 function ordutegia() {
   var fecha = new Date(); 
