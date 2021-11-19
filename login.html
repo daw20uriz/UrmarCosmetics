@@ -1,0 +1,292 @@
+<html lang="es">
+<head>
+    <title>Aurpegiaa💄</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="produktuak.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/acee21181e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <link href="popup.css" rel="stylesheet" type="text/css">
+    <script>
+        function ordutegia() {
+  var fecha = new Date(); 
+        var data = fecha.getDay();   
+        var eguna; 
+    
+        switch (data)
+        {
+            case 0:  eguna = ("Igandea"); 
+            break; 
+            case 1:  eguna = ("Astelehena"); 
+            break; 
+            case 2:  eguna = ("Asteartea"); 
+            break; 
+            case 3:  eguna = ("Asteazkena"); 
+            break; 
+            case 4:  eguna = ("Osteguna"); 
+            break; 
+            case 5:  eguna = ("Ostirala"); 
+            break; 
+            case 6: eguna = ("Larunbata"); 
+            break; 
+        }
+        var siii = " ";
+        if (eguna == "Astelehena" || eguna == "Asteartea" || eguna ==  "Asteazkena" || eguna == "Osteguna" || eguna == "Ostirala" || eguna == "Larunbata")
+        {
+        var si = fecha.getHours(); 
+            switch (si)
+            {
+                case 0: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 1: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 2: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 3: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 4: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 5: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 6: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 7: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 8: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 9:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 10:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 11:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 12:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 13:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 14:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 15:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 16:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 17:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 18:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 19:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 20:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 21:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 22: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 23: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+
+
+
+            }
+        }
+        else 
+       {
+        
+        siii = siii + "<p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+        document.getElementById("informazioa2").innerHTML=siii;
+            
+       }
+        }
+        setInterval(ordutegia, 10000);
+
+        function check(form)
+        {
+
+        if(form.userid.value == "admin" && form.pwd.value == "admin")
+        {
+            alert("SI");
+            return true;
+            
+        }
+        else
+        {
+            alert("Error Password or Username")
+            return false;
+        }
+        }
+    </script>
+</head>
+<header>
+  <div class="header">
+    <img src="logoa.png" alt="logoa" width="220" height="130">
+    <div class="header-right">
+      <a href="index.html">Hasiera</a>
+      <a href="perfumeak.html">Perfumeak</a>
+      <a href="makillajea.html">Makillajea</a>
+      <a href="aurpegia.html">Aurpegia</a>
+      <a href="gorputza.html">Gorputza</a>
+      <a href="deskontua0.html">Deskontuak</a>
+      <a class="active" href="markak.html">Markak</a>
+      <a href="kalendarioa.html"><i class="fa fa-calendar"></i></a>
+      <a href="kontaktua.html"><i class="fas fa-envelope"></i></a>
+
+      
+    </div>
+  </div>
+</header>
+<body onload="ordutegia();check(form);" style="text-align: center;">
+    <br>
+    Langileen administrazio gunea <br>
+    <a><img src="settings.gif" style="text-align: center; width: 70px;"></a>
+    <br>
+    <form name="loginForm" method="post" action="segida.html">
+        <table width="30%" bgcolor="0099CC" align="center">
+        
+        <tr>
+        <td style="padding-bottom:10px;" colspan=2><center><font size=3><b>Sesioan sartu</b></font></center></td>
+        <BR>
+        </tr>
+        
+        <tr style="padding-bottom:10px;">
+        <td>Erabiltzaile-Izena:</td>
+        <td><input type="text" size=25 name="userid"></td>
+        </tr>
+        
+        <tr>
+        <td>Pasahitza:</td>
+        <td><input type="Password" size=25 name="pwd"></td>
+        </tr>
+        
+        <tr>
+        <td><input type="Reset"></td>
+        <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+        </tr>
+        
+        </table>
+        </form>
+        
+<br>
+
+</body>
+
+        <!-- <div id="popup" class="overlay">
+            <div id="popupBody">
+                <h2>Título de la ventana</h2>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <p>Este es el contenido</p>
+                </div>
+            </div>
+        </div> -->
+<footer>
+    <section class="">
+    
+      <footer class="bg-secondary text-dark text-center text-md-start bg-opacity-10">
+        
+        <div class="container p-4">
+         
+          <div class="row">
+           
+            
+  
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Kontaktua</h5>
+              <ul class="demo" style="text-decoration: none;">
+                <li><a href="mailto:hello@urmarcosmetics.com" style="color: black;">hello@urmarcosmetics.com</a></li>
+                <li><a href="kontaktua.html" style="color: black;">Beste forma batzuk</a></li></ul>
+            </div>
+           
+    
+           
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase ">Konektatu</h5>
+    
+              <ul class="demo">
+                <li><a href="https://www.instagram.com/urmarcosmetics/" style="color:burlywood;"><i class="fab fa-instagram fa-lg" ></i></a>
+                <a href="https://twitter.com/urmar_cosmetics" style="color:rgb(125, 181, 255);"><i class="fab fa-twitter fa-lg" ></i></a>
+                <a href="https://www.youtube.com/" style="color:red;"><i class="fab fa-youtube fa-lg" ></i></a>
+                <a href="https://www.pinterest.es/" style="color:rgb(177, 51, 51);"><i class="fab fa-pinterest fa-lg" ></i></a>
+                <a href="https://www.facebook.com/" style="color:rgb(91, 91, 247);"><i class="fab fa-facebook fa-lg" ></i></a>
+              </ul>
+            </div>
+            
+           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5  class="text-uppercase">Ordutegia</h5>
+    
+              <a id="informazioa2"></a>
+             
+            </div>
+          </div>
+         
+        </div>
+       
+    
+        
+        <div class="text-center p-3">
+          © 2021 Copyright:
+          <a  href="">UrmarCosmetics</a>
+        </div>
+        
+      </footer>
+      
+    </section>
+  </footer>
+              </html>

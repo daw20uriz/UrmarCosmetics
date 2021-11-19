@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Ordutegia</title>
+        <style>
+            .blink {
+              animation: blinker 0.6s linear infinite;
+              color: #15ff00;
+              font-size: 15px;
+              font-weight: bold;
+              font-family: sans-serif;
+            }
+            .blink2 {
+              animation: blinker 0.6s linear infinite;
+              color: #ff0000;
+              font-size: 15px;
+              font-weight: bold;
+              font-family: sans-serif;
+            }
+            @keyframes blinker {
+              50% {
+                opacity: 0;
+              }
+            }
+            .blink-one {
+              animation: blinker-one 1s linear infinite;
+            }
+            @keyframes blinker-one {
+              0% {
+                opacity: 0;
+              }
+            }
+            .blink-two {
+              animation: blinker-two 1.4s linear infinite;
+            }
+            @keyframes blinker-two {
+              100% {
+                opacity: 0;
+              }
+            }
+          </style>
+    </head>
+    <body>
+        <h1>Ordutegia</h1>
+        <p id="informazioa2"></p>
+        <script type="text/javascript">
+
+
+       var fecha = new Date(); 
+        var data = fecha.getDay();   
+        var eguna; 
+    
+        switch (data)
+        {
+            case 0:  eguna = ("Igandea"); 
+            break; 
+            case 1:  eguna = ("Astelehena"); 
+            break; 
+            case 2:  eguna = ("Asteartea"); 
+            break; 
+            case 3:  eguna = ("Asteazkena"); 
+            break; 
+            case 4:  eguna = ("Osteguna"); 
+            break; 
+            case 5:  eguna = ("Ostirala"); 
+            break; 
+            case 6: eguna = ("Larunbata"); 
+            break; 
+        }
+        var siii = " ";
+        if (eguna == "Astelehena" || eguna == "Asteartea" || eguna ==  "Asteazkena" || eguna == "Osteguna" || eguna == "Ostirala" || eguna == "Larunbata")
+        {
+        var si = fecha.getHours(); 
+            switch (si)
+            {
+                case 0: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 1: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 2: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 3: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 4: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 5: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 6: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 7: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 8: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 9:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 10:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 11:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 12:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 13:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 14:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 15:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 16:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 17:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 18:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 19:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 20:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 21:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 22: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 23: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+
+
+
+            }
+        }
+        else 
+       {
+        
+        siii = siii + "<p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + fecha.getMinutes();
+        document.getElementById("informazioa2").innerHTML=siii;
+            
+       }
+
+       
+
+    </script>
+    </body>

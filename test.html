@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/acee21181e.js" crossorigin="anonymous"></script>
+    <script>
+         
+        //Especificar a que elementos afectará, añadiendo o quitando de la lista:
+        var tgs = new Array( 'div','td','tr');
+        
+        //Indicar el nombre de los diferentes tamaños de fuente:
+        var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+        var startSz = 2;
+        
+        function ts( trgt,inc ) {
+        if (!document.getElementById) return
+        var d = document,cEl = null,sz = startSz,i,j,cTags;
+        
+        sz += inc;
+        if ( sz < 0 ) sz = 0;
+        if ( sz > 6 ) sz = 6;
+        startSz = sz;
+        
+        if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+        
+        cEl.style.fontSize = szs[ sz ];
+        
+        for ( i = 0 ; i < tgs.length ; i++ ) {
+        cTags = cEl.getElementsByTagName( tgs[ i ] );
+        for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+        }
+        }
+		
+		// Test-a JS
+            var ErantzunZuzenak = new Array("a1", "b3", "c2", "d3", "e2", "f2");
+                    
+                    function comprobarTest(test){
+                    
+                        var ErantzunZuzenak=0;
+                        var ErantzunOkerrak=0;
+                        var solucion = document.getElementById("solucion");
+                        var EmaitzaTabla ="<table border=1px; margin-bottom=20px>";
+                        
+                        for(j=0; j< test.length; j++){
+                        var radios = document.getElementsByName(j+1);
+                            for(i=0; i< radios.length;i++){
+                                if (radios[i].checked){
+                                    var valor =  radios[i].value;
+                                    if(valor == test[j]) {
+                                    EmaitzaTabla+= "<tr><td>Erantzun zuzena: </td>"+ "<td>"+ valor + "</td></tr>";
+                                    ErantzunZuzenak++;
+                                    break;
+                                    }else {
+                                    EmaitzaTabla+= "<tr><td>Erantzun okerra: </td><td>"+ valor + "</td></tr>";
+                                    ErantzunOkerrak++;
+                                    break;
+                                    }
+                                }
+                            }
+                            
+                            
+                        }
+                        var numeroRespuestasNulas=test.length - (ErantzunZuzenak + ErantzunOkerrak);
+                        EmaitzaTabla+="<br><tr><td>Erantzunak: </td><td>Erantzun zuzenak: "+ErantzunZuzenak+"<br/>Erantzun okerrak: "+ ErantzunOkerrak+"<br/>Erantzun utzak: "+ numeroRespuestasNulas+"</td></tr>";
+						if (ErantzunZuzenak >= 5)
+						{
+                        EmaitzaTabla = EmaitzaTabla + "<tr>Hona hemen zure deskontu kodea (-20% extra): <br> <h1><a href='deskontua.html'><b>S554</b> </a> </h1><br>";
+						}
+						else{
+						EmaitzaTabla = EmaitzaTabla + "<tr>Ez duzu deskontu koderik irabazi</tr><br><br><input type='button' class='button button1' value='Saiatu Berriro' onclick='window.location.reload()' >";
+						}
+						erantzunak.innerHTML = EmaitzaTabla;
+                }
+    </script>
+	<style>
+		table {
+	  border-collapse: collapse;
+	  width: 50%;
+	  margin-left: 2%;
+	  text-align: justify;
+	}
+		th, td {
+	  text-align: center;
+	  padding: 8px;
+	}
+	tr:nth-child(even) {background-color: #f2f2f2;}
+	
+	.contenedor {
+	  margin: 0 auto;
+}
+.button {
+    background-color: #c92121; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+margin-left: 2%;
+}
+h3 {
+margin-left: 2%;
+}
+	</style>
+</head>
+<header>
+  <div class="header">
+    <img src="logoa.png" alt="logoa" width="250" height="150">
+    <div class="header-right">
+      <a href="index.html">Hasiera</a>
+      <a href="perfumeak.html">Perfumeak</a>
+      <a href="makillajea.html">Makillajea</a>
+      <a href="aurpegia.html">Aurpegia</a>
+      <a href="gorputza.html">Gorputza</a>
+      <a href="deskontua0.html">Deskontuak</a>
+      <a href="markak.html">Markak</a>
+      <a href="kalendarioa.html"><i class="fa fa-calendar"></i></a>
+      <a href="kontaktua.html"><i class="fas fa-envelope"></i></a>
+
+      
+    </div>
+  </div>
+</header>
+<body>
+
+<h1>Galdetegia</h1>
+<h3>Irabaz ezazu deskontu kode bat galdetegia hau egin ondoren.</h3>
+
+<table style="float:left; border: 1px solid rgb(168, 0, 0); margin-right:.5em;">
+    <tr>
+        <td>Makillaje-marka hauetako zein da cruelty free (eco)?</td>
+    </tr>
+    <tr>
+        <td><input type="radio" value="a1" name="1"/>Revolution 
+            <input type="radio" value="a2" name="1"/>Loreal 
+            <input type="radio" value="a3" name="1" />Dior</td>
+    </tr>
+    <tr>
+        <td>Zenbat ml gehienez saltzen ditugu perfumeetan?</td>
+    </tr>
+    <tr>
+        <td><input type="radio" value="b1" name="2"/>150ml
+		<input type="radio" value="b2" name="2"/>300ml
+		<input type="radio" value="b3" name="2"/>200ml</td>
+    </tr>
+    <tr>
+        <td>Kosmetikako marka hauetako zein ari da bihurtzen trending top bere kalitate onagatik?</td>
+    </tr>
+    <tr>
+        <td><input type="radio" value="c1" name="3"/>NYX
+		<input type="radio" value="c2" name="3"/>The Ordinary
+		<input type="radio" value="c3" name="3"/>Guess</td>
+    </tr>
+    <tr>
+        <td>Noiz da makillatzilearen eguna?</td>
+    </tr>
+    <tr>
+        <td><input type="radio" value="d1" name="4"/>4 de octubre
+		<input type="radio" value="d2" name="4"/>24 de junio
+		<input type="radio" value="d3" name="4"/>20 de septiembre
+        <input type="radio" value="d4" name="4"/>16 de marzo</td>
+    </tr>
+    <tr>
+        <td>Marka hauetako zeinek ez du perfumerik saltzen?</td>
+    </tr>
+    <tr>
+        <td><input type="radio" value="e1" name="5"/>Loewe
+		<input type="radio" value="e2" name="5"/>Lancome
+		<input type="radio" value="e3" name="5"/>Teeez</td>
+    </tr>
+    <tr>
+        <td>Marka hauetako zein ez da eguzki-babeslea?</td>
+    </tr>
+    <tr>
+        <td><input type="radio" value="f1" name="6"/>Garnier
+		<input type="radio" value="f2" name="6"/>Nars
+		<input type="radio" value="f3" name="6"/>Babaria</td>
+    </tr>
+</table>
+
+<input type="button" class="button button1" value="Ikusi Soluzioak" onclick="comprobarTest(ErantzunZuzenak)" />
+<br>
+<div class="container">
+<div id="erantzunak"></div>
+</div>
+        
+<a href="javascript:ts('body',1)" class="btn-flotante">+</a>
+<a href="javascript:ts('body',-1)" class="btn-flotante1">-</a>
+</body>
+</html>

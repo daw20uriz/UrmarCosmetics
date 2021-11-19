@@ -1,0 +1,180 @@
+<html lang="es">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width; initial-scale:1.0">
+    <link href="css_aplikazioa.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/acee21181e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img src="logoa.png" alt="logoa" width="290" height="180"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="#">Hasiera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Perfumeak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Makillajea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Gorputza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Markak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Deskontuak</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <a href="https://google.com"><i class="fas fa-envelope"></i></a>
+          <i onclick="" class="fas fa-search"></i>
+        </form>
+      </div>
+    </div>
+  </nav>
+    
+<body>
+
+    <p id="informazioa"></p>
+    <p id="informazioa2"></p>
+	
+    <script>
+
+        produktuak = new Array("GIORGIO ARMANI","L'OREAL PARÍS MAQUILLAJE","JEAN PAUL GAULTIER");
+        deskripzioa = new Array("Eyeliner Eyes To Kill","Infalible 24H Fresh Wear base","Le Male On Board Edición Limitada");        
+        produktu_argazkiak = new Array("eyeliner.jpg","maquillaje-infalible.jpg","le-male-on-board.jpg");
+        prezioa = new Array(36.99,8.50,93.50);
+
+        produktuak2 = new Array("Hugo Boss","L'OREAL PARÍS MAQUILLAJE","KRASH KOSMETICS");
+        deskripzioa2 = new Array("The Scent EDT 50ml","Touche Magique Corrector","Set Edición Limitada Iluminador + Labial");
+        produktu_argazkiak2 = new Array("hugo-boss-the-scent-edt.jpg","touche-magique-corrector.jpg","set-edicion-limitada-iluminador-labial.jpg");
+        prezioa2 = new Array(34.89,10.50,24.95);
+
+        produktuak3 = new Array("URBAN DECAY","L'OREAL PARÍS MAQUILLAJE","ACNEMY");
+        deskripzioa3 = new Array("All Nighter Setting Spray","Labiales Color Infalible 24h","Zitminis Kit Pieles Acneica");
+        produktu_argazkiak3 = new Array("spray-fijador-de-maquillaje.jpg","infalible-24h.jpg","zitminis-kit-para-pieles-con-tendencia-acneica.jpg");
+        prezioa3 = new Array(32.00,14.50,36.99);
+
+        deskontuak = new Array("S554","D419","X862");
+
+        var sartu = prompt("Sartu deskontuaren zenbakia: ");
+
+    for (i=0; i < produktuak.length; i++){
+
+            switch(sartu){
+                case S554:
+                prezio_berria = prezioa[i] * 0.8;
+                prezio_berria2 = prezioa2[i] * 0.8;
+                prezio_berria3 = prezioa3[i] * 0.8;
+
+                var x = "<div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div><br><section><BR><div class='container'><div class='row'> <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak[i]+"'></a><br><b>"+produktuak[i]+"</b><p>"+deskripzioa[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div>";
+                x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak2[i]+"'></a><br><b>"+produktuak2[i]+"</b><p>"+deskripzioa2[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria2)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa2[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div>";
+                x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 p-2 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak3[i]+"'></a><br><b>"+produktuak3[i]+"</b><p>"+deskripzioa3[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria3)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa3[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div></div></section><br><div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div>";
+                document.getElementById("informazioa").innerHTML=x;
+                break;
+
+                case D419:
+                prezio_berria = prezioa[i] * 0.9;
+                prezio_berria2 = prezioa2[i] * 0.9;
+                prezio_berria3 = prezioa3[i] * 0.9;
+
+                var x = "<div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div><br><section><BR><div class='container'><div class='row'> <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak[i]+"'></a><br><b>"+produktuak[i]+"</b><p>"+deskripzioa[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div>";
+                x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak2[i]+"'></a><br><b>"+produktuak2[i]+"</b><p>"+deskripzioa2[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria2)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa2[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div>";
+                x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 p-2 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak3[i]+"'></a><br><b>"+produktuak3[i]+"</b><p>"+deskripzioa3[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria3)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa3[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div></div></section><br><div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div>";
+                document.getElementById("informazioa").innerHTML=x;
+                break;
+
+                case X862:
+                prezio_berria = prezioa[i] * 0.9;
+                prezio_berria2 = prezioa2[i] * 0.9;
+                prezio_berria3 = prezioa3[i] * 0.9;
+
+                var x = "<div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div><br><section><BR><div class='container'><div class='row'> <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak[i]+"'></a><br><b>"+produktuak[i]+"</b><p>"+deskripzioa[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div>";
+                x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak2[i]+"'></a><br><b>"+produktuak2[i]+"</b><p>"+deskripzioa2[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria2)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa2[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div>";
+                x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 p-2 text-center'>";
+                x= x + "<a><img src='"+produktu_argazkiak3[i]+"'></a><br><b>"+produktuak3[i]+"</b><p>"+deskripzioa3[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria3)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa3[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+                x=x + "</div></div></section><br><div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div>";
+                document.getElementById("informazioa").innerHTML=x;
+                break;
+
+                default:
+                x = "<h1>Sartutako deskontu kodea ez da zuzena</h1><br><p>Saiatu berriro edo hasierara bueltatu<p><br>";
+                x = x + "<button class='button button1' onClick='location.reload();'>Saiatu berriro</button>";
+                x = x + "<button class='button button1' onclick='window.location.href='index.html''>Hasierara bultatu</button>";   
+                document.getElementById("informazioa").innerHTML=x;   
+                break;    
+
+            }
+        }
+            // if (deskontuak[i] == sartu)
+            // {
+
+            //     prezio_berria = prezioa[i] * 0.8;
+            //     prezio_berria2 = prezioa2[i] * 0.8;
+            //     prezio_berria3 = prezioa3[i] * 0.8;
+            //     // document.write("Prezioa deskontatuta : " + Math.trunc(prezio_berria) + "<br>");
+            //     // document.write("Prezioa deskontatuta : " + Math.trunc(prezio_berria2) + "<br>");
+            //     // document.write("Produktua: " + produktuak[i] + "<br>");
+            //     // document.write("Produktua: " + produktuak2[i]);
+                
+            //     var x = "<div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div><br><section><BR><div class='container'><div class='row'> <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+            //     x= x + "<a><img src='"+produktu_argazkiak[i]+"'></a><br><b>"+produktuak[i]+"</b><p>"+deskripzioa[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+            //     x=x + "</div>";
+            //     x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>";
+            //     x= x + "<a><img src='"+produktu_argazkiak2[i]+"'></a><br><b>"+produktuak2[i]+"</b><p>"+deskripzioa2[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria2)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa2[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+            //     x=x + "</div>";
+            //     x=x + "<div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 p-2 text-center'>";
+            //     x= x + "<a><img src='"+produktu_argazkiak3[i]+"'></a><br><b>"+produktuak3[i]+"</b><p>"+deskripzioa3[i]+"</p><a><h3><b>"+Math.trunc(prezio_berria3)+"€</b></h3></a><a>Hasierako prezioa: <span class='tachado'><h5>"+prezioa3[i]+"€</h5></span></a><p><small>-20%extra</small></p>";
+            //     x=x + "</div></div></section><br><div align='center'><font color='#FFFFFF' size='+1'><marquee bgcolor='#c92121' direction='left' loop='20'>DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK   DESKONTU ESKLUSIBOAK</marquee></font></div>";
+            //     document.getElementById("informazioa").innerHTML=x;
+
+            // }
+            // else {
+            //     x = "<h1>Sartutako deskontu kodea ez da zuzena</h1><br><p>Saiatu berriro edo hasierara bueltatu<p><br>";
+            //     x = x + "<button class='button button1' onClick='location.reload();'>Saiatu berriro</button>";
+            //     x = x + "<button class='button button1' onclick='window.location.href='index.html''>Hasierara bultatu</button>";   
+            //     document.getElementById("informazioa2").innerHTML=x;  
+            //     }
+                
+            // }
+
+        
+
+       </script>
+
+</body>
+</html>    
+

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🏡</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/acee21181e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/acee21181e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  <meta http-equiv="refresh" content="60" />
+ <style>
+.sticky-container {
+  background-color: hsl(0, 9%, 79%);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 4px;
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  width: 0px;
+  height: auto;
+  z-index: 9999;
+  margin-top: -24px;
+  text-align: center;
+}
+.sticky-container:hover {
+  width: 100px;
+}
+.sticky-container a {
+  padding: 0 !important;
+  display: block;
+  text-align: left;
+  height: 30px;
+  width: 30px;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.sticky-container a img {
+  max-height: 100%;
+}
+ </style>
+  <script>
+         
+    //Especificar a que elementos afectará, añadiendo o quitando de la lista:
+    var tgs = new Array( 'div','td','tr');
+    
+    //Indicar el nombre de los diferentes tamaños de fuente:
+    var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+    var startSz = 2;
+    
+    function ts( trgt,inc ) {
+    if (!document.getElementById) return
+    var d = document,cEl = null,sz = startSz,i,j,cTags;
+    
+    sz += inc;
+    if ( sz < 0 ) sz = 0;
+    if ( sz > 6 ) sz = 6;
+    startSz = sz;
+    
+    if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+    
+    cEl.style.fontSize = szs[ sz ];
+    
+    for ( i = 0 ; i < tgs.length ; i++ ) {
+    cTags = cEl.getElementsByTagName( tgs[ i ] );
+    for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+    }
+    }
+
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+  } else { 
+  x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myFunction2() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction2() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+function ordutegia() {
+  var fecha = new Date(); 
+        var data = fecha.getDay();   
+        var eguna; 
+    
+        switch (data)
+        {
+            case 0:  eguna = ("Igandea"); 
+            break; 
+            case 1:  eguna = ("Astelehena"); 
+            break; 
+            case 2:  eguna = ("Asteartea"); 
+            break; 
+            case 3:  eguna = ("Asteazkena"); 
+            break; 
+            case 4:  eguna = ("Osteguna"); 
+            break; 
+            case 5:  eguna = ("Ostirala"); 
+            break; 
+            case 6: eguna = ("Larunbata"); 
+            break; 
+        }
+        var siii = " ";
+        if (eguna == "Astelehena" || eguna == "Asteartea" || eguna ==  "Asteazkena" || eguna == "Osteguna" || eguna == "Ostirala" || eguna == "Larunbata")
+        {
+        var si = fecha.getHours(); 
+            switch (si)
+            {
+                case 0: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 1: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 2: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 3: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 4: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 5: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 6: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 7: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 8: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 9:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 10:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 11:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 12:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 13:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 14:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 15:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 16:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 17:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 18:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 19:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 20:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 21:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 22: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 23: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+
+
+
+            }
+        }
+        else 
+       {
+        
+        siii = siii + "<p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+        document.getElementById("informazioa2").innerHTML=siii;
+            
+       }
+        }
+
+        setInterval(ordutegia, 10000);
+
+</script>
+
+
+</head>
+   
+
+<header>
+  <div class="header">
+    <img src="logoa.png" alt="logoa" width="220" height="130">
+    <div class="header-right">
+      <a class="active" href="index.html">Hasiera</a>
+      <a href="perfumeak.html">Perfumeak</a>
+      <a href="makillajea.html">Makillajea</a>
+      <a href="aurpegia.html">Aurpegia</a>
+      <a href="gorputza.html">Gorputza</a>
+      <a href="deskontua0.html">Deskontuak</a>
+      <a href="markak.html">Markak</a>
+      <a href="kalendarioa.html"><i class="fa fa-calendar"></i></a>
+      <a href="kontaktua.html"><i class="fas fa-envelope"></i></a>
+
+      
+    </div>
+  </div>
+</header>
+<body onload="ordutegia()">
+  <div class="sticky-container">
+    <div class="button-container" style="text-align: center;">
+      <a href="test.html" >Lortu zure deskontua<img src="descuento.gif" style="float: left;"/></a>
+    </div>
+  </div>
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" ></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a><img src="CAROUSEL.jpg" alt="koka" class="d-block w-100"></a>
+        </div>
+        <div class="carousel-item">
+            <a href="kalendarioa.html"><img src="makeupschool.jpg" alt="popa" class="d-block w-100"></a>
+        </div>
+        <div class="carousel-item">
+            <a"><img src="carousel2.jpg" alt="kola" class="d-block w-100"></a>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+<div class="container h-100">
+  <div class="row align-items-center h-100">
+    <div class="container rounded">
+      <div class="slider">
+        <div class="logos">
+          <a><img src="56-large.jpg"></a>
+          <a><img src="97-large.jpg"></a>
+          <a><img src="100-large.jpg"></a>
+          <a><img src="105-large.jpg"></a>
+          <a><img src="120-large.jpg"></a>
+          <a><img src="132-large.jpg"></a>
+          <a><img src="135-large.jpg"></a>
+          <a><img src="170-large.jpg"></a>
+          <a><img src="176-large.jpg"></a>
+          <a><img src="1095-large.jpg"></a>
+          <a><img src="1393-large.jpg"></a>
+          <a><img src="1421-large.jpg"></a>
+          <a><img src="1671-large.jpg"></a>
+          <a><img src="56-large.jpg"></a>
+          <a><img src="97-large.jpg"></a>
+          <a><img src="100-large.jpg"></a>
+          <a><img src="105-large.jpg"></a>
+          <a><img src="120-large.jpg"></a>
+          <a><img src="132-large.jpg"></a>
+          <a><img src="135-large.jpg"></a>
+          <a><img src="170-large.jpg"></a>
+          <a><img src="176-large.jpg"></a>
+          <a><img src="1095-large.jpg"></a>
+          <a><img src="1393-large.jpg"></a>
+          <a><img src="1421-large.jpg"></a>
+          <a><img src="1671-large.jpg"></a>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+	<aside>	
+<section>
+    
+			<div id="aside1">
+						<a><img src="eyeliner.jpg"> </a> <br>
+						<b>GIORGIO ARMANI</b> <br>
+						Eyeliner Eyes To Kill<br>
+						<br>
+						<a><h3><b>28,75 €</b></h3></a>
+						<a><span class="tachado"><h5>PVR: 36,00 €</h5></span></a>
+						<p><small>-21%</small></p>
+		
+
+		
+            <br>
+			</div>
+			<div id="aside2">
+						<a><img src="spray-fijador-de-maquillaje.jpg"> </a> <br>
+						<b>URBAN DECAY</b> <br>
+						All Nighter Setting Spray<br> Fijador de maquillaje<br>
+						
+						<a><h3><b>32,00 €</b></h3></a>
+						<a><span class="tachado"><h5>PVR: 53,30 €</h5></span></a>
+						<p><small>-40%</small></p>
+	
+
+			
+            <br>
+			</div>
+			<div id="aside3">
+						<a><img src="j-adoreeau-de-parfum.jpg"> </a> <br>
+						<b>DIOR</b> <br>
+            Eau de Parfum 75ml<br> <br>
+						
+						<a><h3><b>79,95 €</b></h3></a>
+						<a><span class="tachado"><h5>PVR: 117,88 €</h5></span></a>
+						<p><small>-33%</small></p>
+
+
+					
+            <br>
+			</div>
+			<div id="aside4">
+						<a><img src="hugo-boss-the-scent-edt.jpg"> </a> <br>
+						<b>HUGO BOSS</b> <br>
+            The Scent EDT 50ml<br> <br>
+						
+						<a><h3><b>34,89 €</b></h3></a>
+						<a><span class="tachado"><h5>PVR: 75,00 €</h5></span></a>
+						<p><small>-54%</small></p>
+
+			
+            <br>
+			</div>			
+						
+			
+		</section>					
+		</aside>
+    
+    
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <img src="ezgif-2-19a96b133ca5.gif">
+          </div>
+        </div>
+          <div class='shadow-lg p-4 p-5 mb-4 col-xs-12 col-sm-6  text-center '>
+            <a><img
+              src="versace_pour_femme_dylan_turquoise-10695111-0-.png"
+              onmouseover="this.src='dylan-turquoise-edt.jpg'"
+              onmouseout="this.src='versace_pour_femme_dylan_turquoise-10695111-0-.png'"
+                  /><br>
+          <b>VERSACE</b><p>Versace Pour Femme Dylan Turquoise</p><h6>100ml</h6> <a><h3><b>42,49 €</b></h3></a>
+          <a><span class='tachado'><h5>PVR: 99,99 €</h5></span></a><p><small>-58%</small></p>
+          
+          </div></div>
+      </div>
+  
+        
+<!-- <div class="botoiak">
+<a href="javascript:ts('body',1)" class="btn-flotante">+</a>
+<a href="javascript:ts('body',-1)" class="btn-flotante1">-</a>
+</div> -->
+</body>
+<footer>
+  <section class="">
+  
+    <footer class="bg-secondary text-dark text-center text-md-start bg-opacity-10">
+      
+      <div class="container p-4">
+       
+        <div class="row">
+         
+          
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Kontaktua</h5>
+            <ul class="demo" style="text-decoration: none;">
+              <li><a href="mailto:hello@urmarcosmetics.com" style="color: black; text-decoration: none;">hello@urmarcosmetics.com</a></li>
+              <li><a href="kontaktua.html" style="color: black; text-decoration: none;">Beste forma batzuk</a></li></ul>
+          </div>
+         
+  
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase ">Konektatu</h5>
+  
+            <ul class="demo">
+              <li><a href="https://www.instagram.com/urmarcosmetics/" style="color:burlywood;"><i class="fab fa-instagram fa-lg" ></i></a>
+              <a href="https://twitter.com/urmar_cosmetics" style="color:rgb(125, 181, 255);"><i class="fab fa-twitter fa-lg" ></i></a>
+              <a href="https://www.youtube.com/" style="color:red;"><i class="fab fa-youtube fa-lg" ></i></a>
+              <a href="https://www.pinterest.es/" style="color:rgb(177, 51, 51);"><i class="fab fa-pinterest fa-lg" ></i></a>
+              <a href="https://www.facebook.com/" style="color:rgb(91, 91, 247);"><i class="fab fa-facebook fa-lg" ></i></a>
+            </ul>
+          </div>
+          
+         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5  class="text-uppercase">Ordutegia</h5>
+  
+            <a id="informazioa2"></a>
+           
+          </div>
+        </div>
+       
+      </div>
+     
+  
+      
+      <div class="text-center p-3">
+        © 2021 Copyright:
+        <a  href="">UrmarCosmetics</a>
+      </div>
+      
+    </footer>
+    
+  </section>
+</footer>
+</html>
+
+
+
+
+
+
+

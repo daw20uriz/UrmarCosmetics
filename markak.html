@@ -1,0 +1,443 @@
+<html lang="es">
+<head>
+    <title>Aurpegiaa💄</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="produktuak.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/acee21181e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <link href="popup.css" rel="stylesheet" type="text/css">
+    <style>
+        @media only screen and (max-width: 600px) {
+        #popupbody img{
+            max-width:200px;
+        }
+        }
+    </style>
+    <script>
+        function ordutegia() {
+  var fecha = new Date(); 
+        var data = fecha.getDay();   
+        var eguna; 
+    
+        switch (data)
+        {
+            case 0:  eguna = ("Igandea"); 
+            break; 
+            case 1:  eguna = ("Astelehena"); 
+            break; 
+            case 2:  eguna = ("Asteartea"); 
+            break; 
+            case 3:  eguna = ("Asteazkena"); 
+            break; 
+            case 4:  eguna = ("Osteguna"); 
+            break; 
+            case 5:  eguna = ("Ostirala"); 
+            break; 
+            case 6: eguna = ("Larunbata"); 
+            break; 
+        }
+        var siii = " ";
+        if (eguna == "Astelehena" || eguna == "Asteartea" || eguna ==  "Asteazkena" || eguna == "Osteguna" || eguna == "Ostirala" || eguna == "Larunbata")
+        {
+        var si = fecha.getHours(); 
+            switch (si)
+            {
+                case 0: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 1: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 2: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 3: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 4: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 5: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 6: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 7: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 8: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 9:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 10:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 11:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 12:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 13:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 14:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 15:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 16:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 17:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 18:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 19:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 20:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 21:
+                siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 22: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+                case 23: 
+                siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+                document.getElementById("informazioa2").innerHTML=siii;
+                break;
+
+
+
+            }
+        }
+        else 
+       {
+        
+        siii = siii + "<p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+        document.getElementById("informazioa2").innerHTML=siii;
+            
+       }
+        }
+        setInterval(ordutegia, 10000);
+
+        function google() {
+        var google = prompt("Sartu marka");
+        google = google.toUpperCase();
+
+        var e = " "
+       switch(google)
+       {
+           case "NYX":
+           var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>NYX</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='nyx.png'><h2>NYX</h2><br><button class='button button1'><a href='https://www.nyxcosmetics.es/' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+           break;
+           
+           case "LANCOME":
+           var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>LANCOME</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='lancome.png'><h2>LANCOME</h2><br><button class='button button1'><a href='https://www.lancome.es/' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+           break;
+
+           case "MAC": 
+           var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>MAC</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='mac.png'><h2>MAC</h2><br><button class='button button1'><a href='https://www.maccosmetics.es/' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+           break; 
+
+           case "RIMMEL LONDON": 
+           var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>RIMMEL LONDON</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='rimmel.png'><h2>RIMMEL LONDON</h2><br><button class='button button1'><a href='https://www.rimmellondon.com/es-es' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+           break; 
+
+           case "MAYBELLINE": 
+           var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>MAYBELLINEN</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='may.png'><h2>MAYBELLINE</h2><br><button class='button button1'><a href='https://www.maybelline.es/' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+           break; 
+
+           case "HUGO BOSS":
+           var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>HUGO BOSS</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='hugo.png'><h2>HUGO BOSS</h2><br><button class='button button1'><a href='https://www.hugoboss.com/es/home' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+            break; 
+
+            case "CAROLINA HERRERA": 
+            var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>CAROLINA HERRERA</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='ch.png'><h2>CAROLINA HERRERA</h2><br><button class='button button1'><a href='https://chcarolinaherrera.com/' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+            break; 
+
+            case "BABARIA": 
+            var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>BABARIA</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='babaria.png'><h2>BABARIA</h2><br><button class='button button1'><a href='https://www.babaria.es/' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+            break; 
+
+            case "NIVEA":
+            var e = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>NIVEA</a></button></p><div id='popup' class='overlay'><div id='popupBody'><img src='nivea.png'><h2>NIVEA</h2><br><button class='button button1'><a href='https://www.nivea.es/' style='color: white ; text-decoration: none;' target='__blank'>Joan Bere Orrialdera</a></button><a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>";     
+           document.getElementById("markak").innerHTML=e;
+            break; 
+
+            default: 
+            var e = "<p>Saiatu beste marka bat sartzen</p>"
+            break; 
+       }
+    }
+    </script>
+</head>
+<header>
+  <div class="header">
+    <img src="logoa.png" alt="logoa" width="220" height="130">
+    <div class="header-right">
+      <a href="index.html">Hasiera</a>
+      <a href="perfumeak.html">Perfumeak</a>
+      <a href="makillajea.html">Makillajea</a>
+      <a href="aurpegia.html">Aurpegia</a>
+      <a href="gorputza.html">Gorputza</a>
+      <a href="deskontua0.html">Deskontuak</a>
+      <a class="active" href="markak.html">Markak</a>
+      <a href="kalendarioa.html"><i class="fa fa-calendar"></i></a>
+      <a href="kontaktua.html"><i class="fas fa-envelope"></i></a>
+
+      
+    </div>
+  </div>
+</header>
+<body onload="ordutegia()">
+<section>
+    <BR><div class="siii">
+        <a><img src="GURE MARKAK.png"></a></div>
+        <BR> <BR>   
+        <div class='container'>
+            
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="CHANEL.png"/>
+                    <br>
+                    <br>
+                    <b>CHANEL</b>
+                    
+                </div>
+                
+                
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="DIOR.png"/>
+                    <br>
+                    <br>
+                    <b>DIOR</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="THEORDINARY.png"/>
+                    <br>
+                    <br>
+                    <b>THE ORDINARY</b>
+                    
+                </div>
+            
+            
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="REVOLUTION.png"/>
+                    <br>
+                    <br>
+                    <b>REVOLUTION</b>
+                    
+                </div>
+                
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="LOEWE.png"/>
+                    <br>
+                    <br>
+                    <b>LOEWE</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="KYLIE.png"/>
+                    <br>
+                    <br>
+                    <b>KYLIE</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="VERSACE.png"/>
+                    <br>
+                    <br>
+                    <b>VERSACE</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="MONCLER.png"/>
+                    <br>
+                    <br>
+                    <b>MONCLER</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="DOLCE.png"/>
+                    <br>
+                    <br>
+                    <b>DOLCE & GABBANA</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="GUCCI.png"/>
+                    <br>
+                    <br>
+                    <b>GUCCI</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="KENZO.png"/>
+                    <br>
+                    <br>
+                    <b>KENZO</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="CK.png"/>
+                    <br>
+                    <br>
+                    <b>CALVIN KLEIN</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="it.png"/>
+                    <br>
+                    <br>
+                    <b>IT COSMETICS</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="CLINIQUE.png"/>
+                    <br>
+                    <br>
+                    <b>CLINIQUE</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="BODYNATUR.png"/>
+                    <br>
+                    <br>
+                    <b>BODY NATUR</b>
+                    
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-6 col-sm-3 text-center'>
+                    <a><img src="ESTEE.png"/>
+                    <br>
+                    <br>
+                    <b>ESTEE LAUDER</b>
+                    
+                </div></div>
+                <BR><BR>
+                
+                
+
+              
+            
+        </div>
+        <p><button class="button button1" onclick="google()" href="#popup">Beste Marka Batzuk</button></p>
+<p id="markak"></p>
+<br>
+</section>
+</body>
+
+        <!-- <div id="popup" class="overlay">
+            <div id="popupBody">
+                <h2>Título de la ventana</h2>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <p>Este es el contenido</p>
+                </div>
+            </div>
+        </div> -->
+<footer>
+    <section class="">
+    
+      <footer class="bg-secondary text-dark text-center text-md-start bg-opacity-10">
+        
+        <div class="container p-4">
+         
+          <div class="row">
+           
+            
+  
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Kontaktua</h5>
+              <ul class="demo" style="text-decoration: none;">
+                <li><a href="mailto:hello@urmarcosmetics.com" style="color: black;">hello@urmarcosmetics.com</a></li>
+                <li><a href="kontaktua.html" style="color: black;">Beste forma batzuk</a></li></ul>
+            </div>
+           
+    
+           
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase ">Konektatu</h5>
+    
+              <ul class="demo">
+                <li><a href="https://www.instagram.com/urmarcosmetics/" style="color:burlywood;"><i class="fab fa-instagram fa-lg" ></i></a>
+                <a href="https://twitter.com/urmar_cosmetics" style="color:rgb(125, 181, 255);"><i class="fab fa-twitter fa-lg" ></i></a>
+                <a href="https://www.youtube.com/" style="color:red;"><i class="fab fa-youtube fa-lg" ></i></a>
+                <a href="https://www.pinterest.es/" style="color:rgb(177, 51, 51);"><i class="fab fa-pinterest fa-lg" ></i></a>
+                <a href="https://www.facebook.com/" style="color:rgb(91, 91, 247);"><i class="fab fa-facebook fa-lg" ></i></a>
+              </ul>
+            </div>
+            
+           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5  class="text-uppercase">Ordutegia</h5>
+    
+              <a id="informazioa2"></a>
+             
+            </div>
+          </div>
+         
+        </div>
+       
+    
+        
+        <div class="text-center p-3">
+          © 2021 Copyright:
+          <a  href="">UrmarCosmetics</a>
+        </div>
+        
+      </footer>
+      
+    </section>
+  </footer>
+              </html>

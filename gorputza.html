@@ -1,0 +1,475 @@
+<html lang="es">
+<head>
+    <title>Gorputza</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="produktuak.css" rel="stylesheet" type="text/css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/acee21181e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link href="popup2.css" rel="stylesheet" type="text/css">
+<script>
+    function ordutegia() {
+var fecha = new Date(); 
+    var data = fecha.getDay();   
+    var eguna; 
+
+    switch (data)
+    {
+        case 0:  eguna = ("Igandea"); 
+        break; 
+        case 1:  eguna = ("Astelehena"); 
+        break; 
+        case 2:  eguna = ("Asteartea"); 
+        break; 
+        case 3:  eguna = ("Asteazkena"); 
+        break; 
+        case 4:  eguna = ("Osteguna"); 
+        break; 
+        case 5:  eguna = ("Ostirala"); 
+        break; 
+        case 6: eguna = ("Larunbata"); 
+        break; 
+    }
+    var siii = " ";
+    if (eguna == "Astelehena" || eguna == "Asteartea" || eguna ==  "Asteazkena" || eguna == "Osteguna" || eguna == "Ostirala" || eguna == "Larunbata")
+    {
+    var si = fecha.getHours(); 
+        switch (si)
+        {
+            case 0: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 1: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 2: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 3: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 4: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 5: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 6: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 7: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 8: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 9:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 10:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 11:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 12:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 13:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 14:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 15:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 16:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 17:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 18:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 19:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 20:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 21:
+            siii = siii + " <p class='blink'>  • Zabalik </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 22: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+            case 23: 
+            siii = siii + " <p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+            document.getElementById("informazioa2").innerHTML=siii;
+            break;
+
+
+
+        }
+    }
+    else 
+   {
+    
+    siii = siii + "<p class='blink2'> • Itxita </p> Eguna: " + eguna + "   " + "<br>Ordua: " + fecha.getHours() + ":" + (fecha.getMinutes()<10?'0':'') + fecha.getMinutes();
+    document.getElementById("informazioa2").innerHTML=siii;
+        
+   }
+    }
+    setInterval(ordutegia, 10000);
+    function lol(){
+    var produktuak = new Array("CLARINS Clarins Eskuko Krema","BODY NATUR Body Natur Exfoliante korporala","ALMA K Recharge Men Travel","SOMATOLINE Somatoline Erreduktorea 7 Gaba","SHISEIDO Advance body creator super slimming reducer","ROCHAS Zelulitisaren aurkako krema bero-efektua","LANCASTER Sun Beauty Velvet Milk Spf 30", "CLARINS Gorputz Krema Sendotzailea","LA MER La Mer The Body Crème"); 
+    var eskuragarri = new Array("badago","badago","badago","badago","badago","badago","badago","badago","badago"); 
+     
+
+    var lol = "<p><button class='button button1' style='color: white ; text-decoration: none;'><a href='#popup'style='color: white ; text-decoration: none;'>Hemen ikusi</a></button></p><div id='popup' class='overlay'><div id='popupBody'>";
+   
+    lol = lol + "<h3> ESKURAGARRI DAUDEN PRODUKTUAK:</h3> "
+    for (var i=0; i<9; i++)
+    {
+        lol = lol + "<br> "+ produktuak[i] + "<br>"; 
+    }
+    lol = lol + "<br>" + produktuak[8] + "'" + " azken unitate bat geratzen da.<br>";
+    lol = lol + "<br> Produktu kopurua: "  + produktuak.length + "<br>";
+    var badago = 0; 
+
+    for (i=0; i < eskuragarri.length; i++)
+    {
+        if (eskuragarri[i] == "badago")
+        {
+            badago = badago + 1; 
+        }
+    }
+    lol = lol + "Produktu kopurua eskuragarri momentu honetan: " + badago + "<br>";
+    
+    lol = lol + "<a id='cerrar' href='#'>&times;</a><div class='popupContent'></div></div></div>"
+    document.getElementById("info").innerHTML=lol;
+
+    //document.write("<br> Produktu kopurua eskuragarri: "  + produktuak.length + "<br>"); 
+    
+   /* document.write(proba.join() + "<br>"); 
+    document.write(proba.join(" - ") + "<br>");
+    document.write(proba.join(" <br> ") + "<br>");
+    var datuak = new Array(); 
+    for (var i=0; i<3; i++)
+    {
+        
+        datuak[i] = prompt("Sartu datuak: "); 
+        document.write(datuak[i] + "<br>"); 
+        egiaztatu(datuak[i]); 
+    }
+    
+    document.write(datuak.join(" - ") + "<br>");
+    /*document.write(proba.reverse() + "<br>"); 
+    document.write("Alfabetikoki ordenatua:" + proba.sort() + "<br>"); 
+    document.write("Arrayaren elemento kopurua: " + proba.length + "<br>"); 
+    document.write(proba.reverse().join(" - ") + "<br>");*/
+
+}
+function Erakutsi(){
+                var segida = document.getElementById("kopuru").value; 
+                if (segida < 1 || segida > 9 || isNaN(segida) || segida!=parseInt(segida))
+                {
+                    document.getElementById("informazioa").innerHTML="<br>Sartutako balioa ez da zuzena.<br>1 eta 9 bitarteko zenbakia izan behar da"; 
+                }
+                else 
+                {
+                    var zerrenda = new Array("CLARINS Clarins Eskuko Krema","BODY NATUR Body Natur Exfoliante korporala","ALMA K Recharge Men Travel","SOMATOLINE Somatoline Erreduktorea 7 Gaba","SHISEIDO Advance body creator super slimming reducer","ROCHAS Zelulitisaren aurkako krema bero-efektua","LANCASTER Sun Beauty Velvet Milk Spf 30", "CLARINS Gorputz Krema Sendotzailea","LA MER La Mer The Body Crème"); 
+                    var bi = 0; 
+                    var hiru = 1; 
+                    var segi = new Array(); 
+                    var letra = 0; 
+
+                    for (var i = 0; i<segida; i++) {
+                        segi[i]= "<H5><b>" + zerrenda[letra]+ "</b> <br>PRODUKTU-KODEA: " + bi * 25 + hiru * 92 + "</H5>"; 
+                        if(letra == 14){
+                            letra = 0; 
+                        }
+                        else {
+                            letra = letra + 1;  
+                        }
+                        bi = bi + 1; 
+                        if(bi>9){
+                            bi = bi - 10; 
+                        }
+                        hiru = hiru - 1;
+                        if(hiru < 0){
+                            hiru = 9; 
+                        }
+
+                    }
+                    document.getElementById("informazioa").innerHTML=segi.join(" "); 
+                }
+            }
+            function Garbitu(){
+                document.getElementById("informazioa").innerHTML="";
+            }
+</script></head>
+
+
+<header>
+  <div class="header">
+    <img src="logoa.png" alt="logoa" width="220" height="130">
+    <div class="header-right">
+      <a href="index.html">Hasiera</a>
+      <a  href="perfumeak.html">Perfumeak</a>
+      <a href="makillajea.html">Makillajea</a>
+      <a href="aurpegia.html">Aurpegia</a>
+      <a class="active" href="gorputza.html">Gorputza</a>
+      <a href="deskontua0.html">Deskontuak</a>
+      <a href="markak.html">Markak</a>
+      <a href="kalendarioa.html"><i class="fa fa-calendar"></i></a>
+      <a href="kontaktua.html"><i class="fas fa-envelope"></i></a>
+
+      
+    </div>
+  </div>
+</header>
+<body onload="ordutegia();lol()">
+<section>
+    <BR>
+        <a><img src="gorputza_header.png"></a>
+        <BR> <BR>   
+        <div class='container'>
+            <div class='row'> 
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img src="crema_de_manos_multi_intensiva_anti_manchas-0-.png">
+                    <br>
+                    <br>
+                    <b>CLARINS</b>
+                    <p>Clarins Eskuko Krema</p>
+                    <h6>100ml</h6>
+                    <a><h3><b>23,39 €</b></h3></a>
+                    <a><span class='tachado'><h5>PVR: 46,95 €</h5></span></a><p><small>-44%</small></p>
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img src="body_natur_exfoliante_corporal_frutos_rojos_granada_y_dragon_fruit-01278156-0-.png"></a>
+                    <br>
+                    <br>
+                    <b>BODY NATUR</b>
+                    <p>Body Natur Exfoliante korporala</p>
+                    <h6>200ml</h6>
+                    <a><h3><b>3,92 €</b></h3></a>
+                    <a><span class='tachado'><h5>PVR: 4,99 €</h5></span></a><p><small>-10%</small></p>
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img
+                       src="alma_k_recharge_travel_kit_for_men_-_estuche_de_viaje-10659830-0-.png"
+                       onmouseover="this.src='2.png'"
+                       onmouseout="this.src='alma_k_recharge_travel_kit_for_men_-_estuche_de_viaje-10659830-0-.png'"
+                        />
+                    <br>
+                    <br>
+                    <b>ALMA K</b>
+                    <p>Recharge Men Travel</p>
+                    <h6>500</h6>
+                    <a><h3><b>17,96 €</b></h3></a>
+                    <a><span class='tachado'><h5>PVR: 19,99 €</h5></span></a><p><small>-10%</small></p>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img 
+                      src="somatoline_reductor_7_noches_gel-15136848-0-.png"
+                      onmouseover="this.src='3.png'"
+                      onmouseout="this.src='somatoline_reductor_7_noches_gel-15136848-0-.png'"
+                      />
+
+                    <br>
+                    <br>
+                    <b>SOMATOLINE</b>
+                    <p> Somatoline Erreduktorea 7 Gaba </p>
+                    <h6>400ml</h6>
+                    <a><h3><b>38,99 €</b></h3></a>
+                    <a><span class='tachado'><h5>PVR: 49,99 €</h5></span></a><p><small>-21%</small></p>
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img src="10180563.jpg"></a>
+                    <br>
+                    <br>
+                    <b>SHISEIDO</b>
+                    <p>Advance body creator super slimming reducer</p>
+                    <h6>200ml</h6>
+                    <a><h3><b>44,99 €</b></h3></a>
+                    <a><span class='tachado'><h5>PVR: 87,99 €</h5></span></a><p><small>-49%</small></p>
+                    <br><br>
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img src="eau_rochas_lait_hydratant-10076484-0-.png"></a>
+                    <br>
+                    <br>
+                    <b>ROCHAS</b>
+                    <p>Zelulitisaren aurkako krema bero-efektua </p>
+                    <h6>500gr</h6>
+                    <a><h3><b>17,09 €</b></h3></a>
+                    <a><span class='tachado'><h5>PVR: 14,99 €</h5></span></a><p><small>-52%</small></p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img src="10646854_shiseido_advanced_body_creator_aromatic_sculpting_gel.jpg"></a>
+                    <br>
+                    <br>
+                    <b>LANCASTER</b>
+                    <p>Sun Beauty Velvet Milk Spf 30</p>
+                    <h6>400ml</h6>
+                    <a><h3><b>21,59 €</b></h3></a>
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img 
+                      src="creme_masvelt_multi_reductrice-0-.png"
+                      onmouseover="this.src='4.png'"
+                      onmouseout="this.src='creme_masvelt_multi_reductrice-0-.png'"
+                      />
+                    <br>
+                    <br>
+                    <b>CLARINS</b>
+                    <p>Gorputz Krema Sendotzailea</p>
+                    <h6>60ml</h6>
+                    <a><h3><b>30,59 €</b></h3></a>
+                    <H5><b><span style="background-color: rgb(0, 183, 255)">AZKAN UNITATEAK</span></b></H5>
+                </div>
+                <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-4 text-center'>
+                    <a><img src="10434093.png"></a>
+                    <br>
+                    <br>
+                    <b>LA MER</b>
+                    <p>La Mer The Body Crème</p>
+                    <h6>300ml</h6>
+                    <a><h3><b>212,36 €</b></h3></a>
+                    <a><span class='tachado'><h5>PVR: 235,95 €</h5></span></a><p><small>-40%</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='container'>
+      <div class='row'> 
+          <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-6 text-center'>
+             
+                <h3 onclick="lol()" href="#popup">ESKURAGARRITASUNA</h3></th>  
+                <p id="info"></p>
+          </div>
+          <div class='shadow-lg p-4 mb-4 col-xs-12 col-sm-6 text-center'>
+
+              <h3>PRODUKTU KODEAK</h3></th>  
+              <p><button class="button button1"> <a href="#popup2" style="text-decoration: none; color:white">Hemen ikusi</a></button></p>
+              <div id="popup2" class="overlay">
+                  <div id="popupBody">
+                      <h3>Produktu-kodea</h3>
+                      <a id="cerrar" href="#">&times;</a>
+                      <div class="popupContent">
+                          <form style="width: 50%,text-align center" name="nagusia">
+                              <fieldset>
+                                  <div>
+                                      <br><label>Adierazi erakutsi behar diren segidako elementu kopurua:</label>
+                                      <br><br>
+                                      <input type="text" id="kopuru" maxlength="20" size="22">
+                                      <input type="button" value="Erakutsi" onclick="Erakutsi()">
+                                      <input type="reset" value="Garbitu" onclick="Garbitu()">
+                                      <br>
+                                  </div>
+                               </fieldset>    
+                              <form>
+                              <p id="informazioa"></p>
+                      </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+</div>
+    <br>
+    <br>
+        <a><img src="dove.png"></a></div>
+        <BR> <br>
+</section>
+</body>
+
+        <footer>
+            <section class="">
+            
+              <footer class="bg-secondary text-dark text-center text-md-start bg-opacity-10">
+                
+                <div class="container p-4">
+                 
+                  <div class="row">
+                   
+                    
+          
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                      <h5 class="text-uppercase">Kontaktua</h5>
+                      <ul class="demo" style="text-decoration: none;">
+                        <li><a href="mailto:hello@urmarcosmetics.com" style="color: black;">hello@urmarcosmetics.com</a></li>
+                        <li><a href="kontaktua.html" style="color: black;">Beste forma batzuk</a></li></ul>
+                    </div>
+                   
+            
+                   
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                      <h5 class="text-uppercase ">Konektatu</h5>
+            
+                      <ul class="demo">
+                        <li><a href="https://www.instagram.com/urmarcosmetics/" style="color:burlywood;"><i class="fab fa-instagram fa-lg" ></i></a>
+                        <a href="https://twitter.com/urmar_cosmetics" style="color:rgb(125, 181, 255);"><i class="fab fa-twitter fa-lg" ></i></a>
+                        <a href="https://www.youtube.com/" style="color:red;"><i class="fab fa-youtube fa-lg" ></i></a>
+                        <a href="https://www.pinterest.es/" style="color:rgb(177, 51, 51);"><i class="fab fa-pinterest fa-lg" ></i></a>
+                        <a href="https://www.facebook.com/" style="color:rgb(91, 91, 247);"><i class="fab fa-facebook fa-lg" ></i></a>
+                      </ul>
+                    </div>
+                    
+                   <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                      <h5  class="text-uppercase">Ordutegia</h5>
+            
+                      <a id="informazioa2"></a>
+                     
+                    </div>
+                  </div>
+                 
+                </div>
+               
+            
+                
+                <div class="text-center p-3">
+                  © 2021 Copyright:
+                  <a  href="">UrmarCosmetics</a>
+                </div>
+                
+              </footer>
+              
+            </section>
+          </footer>
+          </html>
